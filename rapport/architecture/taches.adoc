@@ -1,0 +1,23 @@
+=== Tableau détaillé des tâches
+
+
+
+[cols=",,^",options="header",]
+|====
+| Tâche | Description                                                                                         | Intégré au PAN3
+| T1    | Croupier automatique                                                                                | 
+| T1.1  | Design et conception des pièces                                                                     | 
+| T1.2  | Programmation de la carte de contrôle                                                               | 
+| T1.3  | Liaison téléphone                                                                                   |
+| T1.4  | (Projecteur cartes virtuelles)                                                                      |
+| T2    | Developpement Application                                                                           |
+| T2.1  | Design et codage de l'interface                                                                     | 
+| T2.2  | Implémentation des règles et vérification des coups légaux                                          |
+| T2.3  | Liaison serveur                                                                                     | 
+| T2.4  | IA vision par ordinateur pour la détection des cartes                                               | 
+| T2.5  | Enregistrement et analyse des parties                                                               |
+| T2.6  | Module de chat vocal                                                                                |
+| T3    | Configuration serveur                                                                               | 
+| T3.1  | Gestion des liaisons                                                                                | 
+| T3.2  | Programmation des tâches gerées par le serveur (code partie et appariement joueurs par exemple)      | 
+|====

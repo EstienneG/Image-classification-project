@@ -1,0 +1,42 @@
+[cols=",^,^,^,^",options="header",]
+|====
+|Interface   | Données d'entrée  | Données de sortie  | Connexion  |
+| Caméra -> Croupier |  une photo par seconde, jpeg | identité de la carte piochée, format décimal  | Filaire, usb/usb-C     |
+| Croupier -> Téléphone (hôte) | identité de la carte, format décimal | identité de la carte, format décimal et actions sur la partie | Filaire, usb/usb-C pour le téléphone hôte   |
+|  Téléphone (hôte) -> Serveur | identité de la carte, jouée ou tirée ?
+|  identité de la carte jouée, jouée ou tirée ? |  Serveur   |
+| Serveur -> Téléphone (distant ) | identité de la carte jouée, jouée ou tirée ?  | Affichage sur l'application du joueur, actions sur la partie  | Serveur |
+| Utilisateur distant -> Téléphone (distant)  | identité de la carte jouée | identité de la carte jouée, format décimal | Main de l'utilisateur    |
+| Téléphone (distant) -> Serveur  | identité de la carte  | identité de la carte  | Serveur |
+| Serveur -> Téléphone (hôte) | identité de la carte  | actions sur la partie  |  Serveur |
+|====
+
+===== *Les 4 interfaces principales (voir diagramme d'architecture)
+
+==== *Interface Android – Utilisateur*
+Interface Android : le joueur interagit avec son téléphone via une application Android.
+L'interface permet au joueur de réaliser plusieurs action : choisir une carte, piocher un carte.
+Elle permet également au joueur en distanciel de voir ce que les joueurs en présentiel font.
+
+==== *Interface PC - Android
+Le téléphone host qui est représenté ici par le PC doit envoyer les informations au téléphone du joueur à distance en passant par le serveur
+
+==== *Interface Utilisateur - Croupier
+Les joueurs à distance posent les cartes sur le croupier quand le joueur à distance veut piocher.
+Quand il veut jouer une carte c'est le croupier lui même qui la dépose sur le tapis via un système de moteur.
+
+==== *Interface PC – Croupier*
+Ici le PC est représenté par un téléphone host.
+Le croupier doit pouvoir communiquer avec un téléphone hôte de la partie qui lui même communique avec le serveur. Ainsi le croupier est indirectement lié aux joueurs à distance.
+La connexion croupier/téléphone peut se faire sans fil par Bluetooth par exemple ou de manière filaire.
+Le Croupier transmet et reçoit des informations sous forme de chiffre correspondant à la carte à déposer ou la carte qui vient d'être posé sur le croupier.
+
+===== *Interfaces internes au croupier*
+
+=== *Croupier – Caméra*
+Transfert du signal vidéo de la caméra au croupier. Le croupier reçoit des images et restitue leur label (propriétés de la carte/absence de carte) au téléphone hôte.
+
+=== *Croupier - IA*
+Contrairement à ce qui est noté sur le diagramme d'architecture, le programme d'intelligence artificielle qui reconnait les cartes est logé dans le croupier lui-même. Il échange des nombres entier (entre 1 et 52 pour la valeur d'une carte et entre 1 et 8 pour son emplacement) avec la carte mère du croupier
+
+

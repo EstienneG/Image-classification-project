@@ -1,0 +1,14 @@
+=== Description de l’état de l’art
+ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
+
+Le premier produit qui ressemble à notre projet est le 'UNO extrême' [1] . C'est une version du très connu jeu UNO dans laquelle un appareil remplace la pioche. Au lieu de piocher, on appuie sur le bouton et la machine 'tire' un nombre aléatoire de cartes (entre 0 et 7 cartes avec certaines probabilités). Cela se rapproche de notre croupier mécanique, à la différence que le nôtre n'a pas pour but d'ajouter du hasard dans le jeu mais de jouer les cartes du joueur à distance et donc aussi de communiquer avec l'application. Il permettra aussi de lire les cartes détectées en présence pour les communiquer à l'application et synchroniser les plateaux vrtuels et réels. Le UNO extrême ne peut être joué qu'en présence de tous les joueurs.
+
+EDIT : Le croupier ne distribue plus les cartes
+
+image::uno.jpg[uno]
+
+Le second est une application de jeu de Belote [2]. C'est une application qui permet de jouer en ligne au jeu de Belote. Elle met en relation les joueurs en ligne, répond à leurs instructions et respecte les règles de la Belote. La différence avec notre jeu est bien entendu la dématérialisation totale du jeu qui le rend moins convivial.
+
+Enfin, le groupe pact52 de l'année 2013/2014 *Cards* [3] a réalisé un projet dont la finalité est la même : jouer aux cartes avec un joueur à distance. Cependant, la réalisation diffère beaucoup de la nôtre : Les cartes sont toutes marquées d'un QR code pour être lue par une caméra et les cartes du joueur à distance jouées sont projetées sur le plateau avec un projecteur. Nous souhaitons que les cartes du joueur à distance soient physiquement jouées et c'est pourquoi nous utiliserons un croupier mécanique contenant le paquet et pouvant lire et sélectionner les cartes. De plus, nous avons renoncé à l'utilisation de QR codes qui rendent les cartes reconnaissables par les joueurs. Ainsi, nous nous orientons donc plus vers des technologies type nfc.
+
+

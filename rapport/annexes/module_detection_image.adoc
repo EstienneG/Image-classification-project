@@ -1,0 +1,27 @@
+=== Module détéction image
+
+==== Descriptions
+
+Reconnaissance de cartes pour indiquer à la machine quelle est son symbole et sa couleur. 
+
+* Données d'entrée : 
+** Au niveau du croupier, photo de l'ensemble des cartes du joueur à distance
+** Au niveau du tapis de jeu, photos des cartes jouées (1/sec)
+
+* Données de sortie :
+** Symbole (As, 2, J, D, K...); couleur (carreau, coeur, pique, trèfle)
+ 
+==== Avancement
+
+* Assimilation des principes du Deep Learning
+* Entraînement d'un réseau pour reconnaître des images à partir d'une base de données étiquetée en ligne : CIFAR-10
+* Entraînement d'un réseau pour reconnaître des cartes à partir de photos de ces dernières
+
+==== Bibliographie spécifique
+
+* Cours machine learning : 
+** https://classroom.udacity.com/courses/ud730
+** Pattern recognition and machine learning, Christopher M.BISHOP, chapitre 5.
+
+* Tutoriels machine learning
+** https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html

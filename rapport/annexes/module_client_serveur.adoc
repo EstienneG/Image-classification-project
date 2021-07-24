@@ -1,0 +1,21 @@
+=== Module détéction image
+
+==== Descriptions
+
+mise en place d'un serveur sous LAMP qui permet de connecter les joueurs grâce à des requêtes https. 
+
+* Données d'entrée : 
+** Au niveau du croupier, les cartes sur les différents emplacements
+** Au niveau de l'application, action du joueur
+
+* Données de sortie :
+** actualisation de la position des cartes
+ 
+==== Avancement
+
+* Mise en place du serveur et de son administration
+* Api WEB REST pour communiquer avec l'application et le croupier
+
+==== Bibliographie spécifique
+
+* vidéo sur la mise en place d'une api web rest https://www.youtube.com/watch?v=f5qEXU3btp8&ab_channel=NouvelleTechno

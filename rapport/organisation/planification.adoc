@@ -1,0 +1,117 @@
+=== Planning temporel PACT
+
+==== Taches / PAN1 13/11/19
+
+===== Générales
+
+* rapport:
+
+[cols=",^,^,,",options="header",]
+|====
+|Tâche |Qui |Quand |Fait |Remarque
+|sujet |Elio |04/11 |X |
+|sujet en anglais |Agathe |04/11 |X |
+|scenario |Clément + Elio |19/10 |X |
+|architecture (schéma et documentation) |Clément+Louis |19/10 |X |
+|découpage en modules |Mohammed + Antoine |04/11 |X |
+|planning temporel |Estienne + Agathe |04/11 |X |
+|description des interfaces |Antoine |04/11 |X |
+|Description de la proposition |Mohammed + (Elio) |04/11 |X |
+|Description de l'état de l'art |Estienne |04/11 |X |
+|Tableau détaillé des tâches | Elio | 04/11 |X |
+|====
+
+* présentation 15mn
+
+[cols=",^,^,,",options="header",]
+|====
+|Tâche |Qui |Quand |Fait |Remarques
+|préparation du document |Agathe |04/11 |x|
+|répartition de la parole |Tout le monde |04/11 |x|
+|répétition |Tout le monde | |x |
+|====
+
+==== Taches / PAN2 20/01/20
+
+===== Générales
+
+* rapport
+
+[cols=",^,^,,",options="header",]
+|====
+|Tâche |Qui |Quand |Fait |Remarques
+|mise à jour selon remarques du jury | | | |
+|mise à jour de l’architecture | Clément | début décembre | X |
+|interfaces | | | |
+|plan de test par module et global | Tout le monde | fin janvier | X | Clément et Estienne créent les tableaux et le groupe les remplie
+|avancement | | | |
+|====
+
+* Prendre rdv avec vos experts pour le PAN2
+
+[cols=",^,^,,",options="header",]
+|====
+|Tâche |Qui |Quand |Fait |Remarques
+|module test&intégration | Clément | 20/01/2021 | X |
+|module ResberryPi | Clément | 20/01/2021 | X |
+|module SES | Agathe | 20/01/2021 | X |
+|====
+
+===== Modules
+
+* Android
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Installation de l’outil Android Studio | | |
+|TP Android | | |
+|Squelette d’application | | |
+|GUI | | |
+|Plan de test | | |
+|====
+
+* Autres modules
+
+==== Tâches / PAN3 18/03/20
+
+===== Générales
+
+* Préparer un déroulé de la démo et du ``matériel'' de démo
+
+===== Modules
+
+* Android
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|asynctask pour client-serveur | | |
+|feature 1 | | |
+|feature 2 | | |
+|test | | |
+|====
+
+* …
+
+==== Tâches / PAN4 04/05/20
+
+===== Générales
+
+* poster pour le stand
+* présentation 4 slides
+* rapport: avancement, rapports de test
+
+===== Modules
+
+* Android
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|feature 8 | | |
+|feature 9 | | |
+|test | | |
+|====
+
+* …

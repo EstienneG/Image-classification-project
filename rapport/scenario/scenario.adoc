@@ -1,0 +1,12 @@
+=== Scénarios d’usage
+Des joueurs en présentiel et en distanciel veulent jouer ensemble à un jeu de carte.
+Ils se connectent tous sur l’application. L’un crée une partie et reçoit un code qu’il communique aux autres afin qu’ils puissent rejoindre la même partie. Le mode "distanciel" ou "présentiel" est séléctionné par chaque groupe de joueur.
+Un joueur distribue les cartes et pose celles de la personne à distance sur la machine. Il permet d'effectuer physiquement les coups du joueur à distance. Lorsqu'un joueur présent doit piocher, le croupier donne la carte. Lorsqu'un joueur à distance doit piocher, le croupier met la carte de côté et la communique vers le serveur afin que cette carte soit virtuellement dans le jeu du joueur concerné.
+Les cartes jouées en présentiel sont détectées par le croupier ou par un téléphone (nfc ou camera).
+Les téléphones font office de plateau de jeu virtuel et permettent d'afficher les coups des joueurs à distance.
+Les joueurs à distance jouent leurs cartes virtuellement via l'application.
+Chaque groupe de joueur a son paquet de carte, réel ou virtuel, la partie commence.
+
+=== Options :
+- Verification des coups légaux +
+- Enregistrement des parties (l'historique des coups et calcul des scores) +

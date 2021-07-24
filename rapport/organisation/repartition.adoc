@@ -1,0 +1,21 @@
+=== Répartition des élèves par module
+
+
+
+[cols="^,^,^,^,^,^,^",options="header",]
+|====
+| Nom                     | Communication Client Serveur | Smartphone et tablette Android | Détéction d'image | Raspberry Pi | Module SES | Test & Intégration
+| Nom Expert              |    Jean-Claude Moissinac     |       Jean-Claude Dufourd      | Stéphane Lathuilière   | Ulrich Kuhne   | Christophe PRIEUR | Yuan YAO
+
+| Clément Lebrin          |                              |                                |    |       X      |        X   |       X
+| Estienne Goigoux        |                              |                                | X  |              |            |       X
+| Antoine Charpentier     |                              |                                | X  |      X       |            |       
+
+| Louis Caubet            |               X              |                                |   |              |            |     X
+
+| Elio Delacour           |               X              |              X                 |    |              |            |
+
+| Agathe Porcheron Lucas  |                              |                                |    |      X       |     X      |
+
+| Mohammed El-Asri        |                              |              X                 | X  |              |            |
+|====

@@ -1,0 +1,41 @@
+=== Comptes Rendus de réunions
+
+Insérez ici vos comptes rendus de réunions : date, durée, participants,
+sujets abordés.
+
+==== Réunion du 06/11/2020
+
+* Présents:
+Tous
+* Sujets abordés
+** *Répartition des modules, présentation orale* : 
+* Actions à entreprendre:
+
+
+==== Réunion du 16/12/2020
+
+* Présents:
+Antoine, Estienne, Mohammed (module détection image), Stéphane Lathuillière (expert)
+* Sujets abordés
+** *Façon d'aborder le problème, principes de base du Deep Learning*
+* Actions à entreprendre: 
+Entraîner un premier réseau de neurones, étiqueter des cartes
+
+
+==== Réunion du 10/02/2021
+
+* Présents :
+groupe Pact, Germain
+* Sujets abordés :
+** *PAN2*
+* Bilan :
+** *OK, réussir à communiquer avec expert Client/Serveur*
+
+==== Réunion du 07/04/2021
+
+* Présents :
+groupe pACT, Germain
+* Sujets abordés :
+** *PAN3*, test et intégration
+* Bilan :
+** *Il faut tester les modules, utilisation du prototype pour la reconnaissance d'image.*

@@ -1,0 +1,28 @@
+=== Suivis des modules (Après PAN1)
+
+Insérez ici votre biblio et vos avancées techniques par module (réunions
+experts, pseudo-code d’algorithmes, description détaillée de vos réalisations, etc.).
+
+
+==== module détection d'image : 
+
+===== Avancées techniques
+
+Implémentation d'un algorithme de reconnaissance d'animaux et objets de la base de données CIFAR-10. Taux de réussite sur le set de test : 60%
+
+===== Bibliographie 
+
+* Cours machine learning https://classroom.udacity.com/courses/ud730
+* Pattern recognition and machine learning, Christopher M.BISHOP, chapitre 5.
+* https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
+
+==== module client serveur :
+
+===== Avancées techniques
+
+Mise en place d'un serveur LAMP avec une API web Rest pour effectuer des requêtes https sur la base de donnée.
+
+===== Bibliographie
+
+* vidéo sur la création d'une API REST https://www.youtube.com/watch?v=f5qEXU3btp8&ab_channel=NouvelleTechno
+

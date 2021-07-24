@@ -1,0 +1,54 @@
+= Plan de test par module = 
+
+== Module Android ==
+
+[options="header"]
+|======================
+|Type de test |Cas à tester | Données d'entrée | Contexte du test | Résultat attendu | Date du test 
+| Test de fonctionnalité | Squelette d'application plus ou moins remplie | Interaction humaine avec l'application (Boutons et champs de texte) | Avant l'implémentation de la logique du jeu | Connexion entre les activité | 28/01/2021
+| Test de fonctionnalité | Implémentation des règles du jeu de cartes | Une partie de jeu à analyser | "Numériser et coder" jeu de la belotte | Détecter les coups possibles et alerter les fraudes | PAN3
+| Test de fonctionnalité | Calcul des points de l'utilisateur | Une partie jouée et données sur l'utilisateur | Une étape avancée quand l'application permet de jouer une partie virtuelle(Peut etre auront nous besoin de connecter une base de données) | Calcul des points du joueur et se rappeler de ses points pour chaque connexion | PAN3
+|======================
+
+== Module RasberryPi ==
+
+[options="header"]
+|======================
+|Type de test |Cas à tester | Données d'entrée | Contexte du test | Résultat attendu | Date du test 
+| Test de fonctionnalité | Mécanique des 8 cervo-moteurs | Signal impulsionnel du rasberryPi | Avant l'assemblage du croupier | Activation du moteur puis remise en position initiale | PAN 3
+| Test de fonctionnalité | Reception de l'image par le croupier | Image jpeg | Visualisation correct de l'image sur un écran | Le croupier n'envoie pas de message d'erreur | PAN3
+| Test de connexion | Connexion filaire ou usb avec le téléphone host | Fichier .txt | Connexion indispensable | L'échange de fichier se passe bien dans les deux sens | PAN3
+|======================
+
+== Module Client-Serveur ==
+
+[options="header"]
+|======================
+|Type de test |Cas à tester | Données d'entrée | Contexte du test | Résultat attendu | Date du test 
+| Test de connexion | envoie d'une information quand le croupier est activé et détecte des cartes à l'aide du module image | donnée simple représentant les cartes détectés | première connexion entre le premier client (un téléphone) et le croupier | le téléphone connait les cartes présentent dans le croupier | PAN3
+| Test de connexion | envoie d'information entre le premier client (téléphone) et le serveur | donnée simple qui représente le jeu dans l'état actuel | première connexion client serveur | le serveur reconnait les informations du téléphone et actuallise la partie| PAN3
+| Test de connexion | réception d'information depuis le serveur | donnée simple qui représente le jeu dans l'état actuel | première connexion second client serveur | le second client se met à jour sur les donnée du jeu| PAN3
+|======================
+
+== Module Image ==
+
+[options="header"]
+|======================
+|Type de test |Cas à tester | Données d'entrée | Contexte du test | Résultat attendu | Date du test 
+| Test de fonctionnalité | Images non utilisées pour l'entraînement du programme | Images de la base de données CIFAR-10 | Apprentissage de l'utilisation des réseaux de neurones | Taux de réussite (on a obtenu 60%) | 14/01/2021
+| Test de fonctionnalité | Carreau / coeur / pique / trèfle / absence de carte | Images à labélliser par l'algorithme | Première utilisation de deep learning pour le projet | Taux de réussite élevé (>90%) | 21/02/2021
+| Test de fonctionnalité  | Numéro de la carte / absence de carte | Images à labélliser par l'algorithme | Utilisation  du deep learning pour le projet | Taux de réussite élevé (>90%) | 01/02/2021
+|======================
+
+== Tests globaux ==
+
+[options="header"]
+|======================
+|Type de test |Cas à tester | Données d'entrée | Contexte du test | Résultat attendu | Date du test | Méthode de test
+| Test d'intégration | Arriver à connecter les joueurs à distance par le réseau | Un code de la partie créée par le host | Communication avec le serveur | Jeu synchronisé entre le joueur sur l'application et le plateau réel | PAN3 | boite blanche
+| Test d'intégration | Connection caméra et gestion de la partie par le host | Un flux de photos | Communication avec le RPI et IMAGE | Les données du jeu en cours arrivent numérisés | PAN4 | boite noire
+| Test d'intégration | Fonctionnement de l'algorithme IA dans le rasberryPi | Image jpeg de plusieurs cartes | L'algorithme doit tourner dans le croupier | La carte est reconnue | PAN3 | boite noire
+| Test de validation | mise en situation réelle | vrai partie de carte | faire un prototype du projet | une partie jouable en présentiel et en distanciel | PAN4 | boite blanche
+| Test d'intégration | Numéro + symbole de la carte / absence de carte| Images à labelliser par l'algorithme | Pouvoir faire un prototype de notre projet | Taux de réussite élevé (>90%)| PAN3 | boite blanche
+| Test de validation | ensemble des modules | différents cas de cartes | une partie réelle | si une situation impossible se présente, un message d'erreur doit apparaitre | fin du projet | 
+|======================
